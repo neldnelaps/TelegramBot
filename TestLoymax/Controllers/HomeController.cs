@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+
+using TestLoymax.Entities;
 
 namespace TestLoymax.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ActionResult Index()
         {
-            return "bot-zadrot";
+            UsersDBEntities listclients = new UsersDBEntities(); 
+            return View(listclients);
         }
     }
 }
