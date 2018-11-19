@@ -9,6 +9,7 @@ using TestLoymax.Models;
 
 namespace TestLoymax.Controllers
 {
+
     public class MessageController : ApiController
     {
         [Route(@"update")]
